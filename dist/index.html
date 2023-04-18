@@ -61,8 +61,8 @@
     <!--third level of nav-->
     <nav class="navbar navbar-expand-lg navbar-light">   
       <!--main links, search icon and three-line button--> 
-      <div class = "container-fluid">
-        <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <div class = "container-fluid"><!--FIXME border-->
+        <button class="navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <ul class = "navbar-nav me-auto mb-2 mb-lg-0">
@@ -94,16 +94,52 @@
             <a class="nav-link" href="">Nashville Inno</a>
           </li>
         </ul>
+        <div role = "search" class = "dropdown">
+          <button type = "button" data-bs-toggle = "dropdown" data-bs-target = "#search-menu" class = "navbar-toggle">
+            <span class = "nav-open-btn">
+              <i class = "bi bi-search"></i><!--TODO find search button-->
+            </span>
+          </button>
+        </div>
       </div>
     </nav>
     <!--fourth level of navbar-->
     <nav class = "navbar navbar-expand-lg navbar-light">
       <!--collapsed content-->
       <!--TODO menu on navigation bar-->
-      <div class="collapse" id="navbar-menu">
-        <div class="p-4">
-          <h5 class="h4">Collapsed content</h5>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+      <div class="collapse bg-light" id="navbar-menu">
+        <div class = "nav-item border-top border-bottom-0 p-4 mx-4">
+          <button type = "button" data-bs-toggle = "collapse" data-bs-target = "#menu1" class = "font-weight-bold text-start w-100 px-0 py-4 border-0 rounded-0 bg-transparent">
+            <div class = "fw-bold">
+              Industries & Topics
+            </div>
+          </button>
+          <div id = "menu1" class = "collapse border-0 rounded-0 bg-transparent p-0 m-0 w-100" aria-expanded="false" aria-label="Toggle navigation">
+            <div class = "d-flex flex-row">
+              <div class = "p-6 w-100">
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Banking & Financial</a></div>
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Career & Workspace</a></div>
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Commercial Real Estate</a></div>
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Diversity, Equity and Inclusion</a></div>
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Education</a></div>
+              </div>
+              <div class = "p-6 w-100">
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Energy</a></div>
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Food & Lifestyle</a></div>
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Government & Regulation</a></div>
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Health Care</a></div>
+                <div class = "row"><a href = "" class = "link-secondary" style = "text-decoration: none">Manufacturing</a></div>
+              </div>
+            </div>
+          </div>
+          <button type = "button" data-bs-toggle = "collapse" data-bs-target = "#menu2" class = "font-weight-bold text-start text-left w-100 px-0 py-4 border-0 rounded-0 bg-transparent">
+            <div class = "fw-bold">
+              Partner Insights (Sponsored Content)
+            </div>
+          </button>
+          <div id = "menu2" class = "collapse border-0 rounded-0 bg-transparent p-0 m-0 w-100" aria-expanded="false" aria-label="Toggle navigation">
+
+          </div>
         </div>
       </div>
     </nav>
