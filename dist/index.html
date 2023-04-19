@@ -14,7 +14,7 @@
     <!--first level of nav-->
     <nav id = "first_nav_size" class="navbar navbar-expand-lg navbar-light bg-secondary-subtle border-bottom font-size: 10px;">
       <span id = "first_nav" class="navbar-brand fw-bold">THE BUSINESS JOURNAL</span>
-      <div id = "first_nav" class="vr" style="height: 30px;"></div>
+      <div id = "first_nav" class="vr"></div>
       <div id = "first_nav" class="collapse navbar-collapse">
         <ul class="navbar-nav me-auto">
           <li class="nav-item dropdown">
@@ -42,29 +42,19 @@
       </ul>
     </nav>  
     <!--second level of nav-->
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom p-0 position-relative"><!--FIXME no border-->
-      <!--<div class="container-fluid">-->
-        <!--logo button, the big map project and subscribe now button-->
-
-        <!--TODO finish logo-link-->
+    <nav class="navbar navbar-light border-bottom p-0 position-relative">
         <a href="" class = "d-flex align-items-center text-center me-auto h-100 logo-link">
           <div id = "box_nash_logo" class = "nash_logo">
             <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="../src/img/nashville-logo.svg" alt="The Business Journals">
           </div>
-        </a><!--TODO downscale-->
-
-        <ul class="navbar-nav me-auto"><!--FIXME-->
-          <li class="nav-item">
-            <a class="nav-link" href="">Crane Watch: Big Map of Projects</a>
-            <i
-          </li>
-        </ul>
-        
-        <div class = "d-flex">
-          <div class="text-uppercase me-auto">access all articles</div> <!--FIXME must centered-->
-          <button type="button" class="btn btn-primary btn-sm me-auto">SUBSCRIBE NOW</button>
+        </a><!--FIXME-->
+        <div role="link" class="d-none d-sm-none order-sm-0 d-md-flex flex-sm-grow-1 align-items-center">
+          <a href="" class="px-4 ml-2" style = "text-decoration: none;" >
+            <div class="fw-bold">Crane Watch: The Big Map of Projects<i class="fa fa-angle-right"></i></div>
+          </a>
         </div>
-      <!--</div> --> 
+        
+        <div class="text-uppercase me-3">access all articles<button type="button" class="btn btn-primary btn-sm">SUBSCRIBE NOW</button></div>
     </nav>
     <!--third level of nav-->
     <nav class="navbar navbar-expand-lg navbar-light">   
