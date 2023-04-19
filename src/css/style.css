@@ -75,3 +75,20 @@
     width: 60%;
     height: 60%;
 }
+
+#separator{
+    width: 100%;
+    height: 150px;
+}
+
+.navbar_color{
+    background-color: white;
+}
+
+/* styles for mobile screens */
+@media only screen and (max-width: 479px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+}

@@ -11,146 +11,149 @@
     <link href = "src/css/style.css" rel = "stylesheet">
   </head>
   <header>
-    <!--first level of nav-->
-    <nav id = "first_nav_size" class="navbar navbar-expand-lg navbar-light bg-secondary-subtle border-bottom font-size: 10px;">
-      <span id = "first_nav" class="navbar-brand fw-bold">THE BUSINESS JOURNAL</span>
-      <div id = "first_nav" class="vr"></div>
-      <div id = "first_nav" class="collapse navbar-collapse">
+    <div id = "nav_container" class = "fixed-top">
+      <!--first level of nav-->
+      <nav id = "first_nav_size" class="navbar navbar-expand-lg navbar-light bg-secondary-subtle border-bottom font-size: 10px;">
+        <span id = "first_nav" class="navbar-brand fw-bold">THE BUSINESS JOURNAL</span>
+        <div id = "first_nav" class="vr"></div>
+        <div id = "first_nav" class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item dropdown">
+              <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="citySelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Select a City
+              </a>
+              <ul class="dropdown-menu dropdown-menu-light ms-auto" aria-labelledby="citySelectDropdown">
+                <li><a id = "blank_link" class="dropdown-item" href="">City 1</a></li>
+                <li><a id = "blank_link" class="dropdown-item" href="">City 2</a></li>
+                <li><a id = "blank_link" class="dropdown-item" href="">City 3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
         <ul class="navbar-nav me-auto">
           <li class="nav-item dropdown">
-            <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="citySelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Select a City
+            <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="loginSelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sign In
             </a>
-            <ul class="dropdown-menu dropdown-menu-light ms-auto" aria-labelledby="citySelectDropdown">
-              <li><a id = "blank_link" class="dropdown-item" href="">City 1</a></li>
-              <li><a id = "blank_link" class="dropdown-item" href="">City 2</a></li>
-              <li><a id = "blank_link" class="dropdown-item" href="">City 3</a></li>
+            <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="loginSelectDropdown">
+              <li><a id = "blank_link" class="dropdown-item" href="">Sign in</a></li>
+              <li><a id = "blank_link" class="dropdown-item" href="">Become a Member</a></li>
             </ul>
           </li>
         </ul>
-      </div>
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item dropdown">
-          <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="loginSelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Sign In
+      </nav>  
+      <!--second level of nav-->
+      <nav class="navbar navbar_color navbar-light border-bottom p-0 position-relative">
+          <a id = "blank_link" href="" class = "d-flex align-items-center text-center me-auto h-100 logo-link">
+            <div id = "box_nash_logo" class = "nash_logo">
+              <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg" alt="The Business Journals">
+            </div>
           </a>
-          <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="loginSelectDropdown">
-            <li><a id = "blank_link" class="dropdown-item" href="">Sign in</a></li>
-            <li><a id = "blank_link" class="dropdown-item" href="">Become a Member</a></li>
+          <div role="link" class="d-none d-sm-none order-sm-0 d-md-flex flex-sm-grow-1 align-items-center">
+            <a id = "blank_link" href="" class="px-4 ml-2" style = "text-decoration: none;" >
+              <div class="fw-bold">Crane Watch: The Big Map of Projects<i class="fa fa-angle-right"></i></div>
+            </a>
+          </div>
+          
+          <div class="text-uppercase me-3">access all articles<button type="button" class="btn btn-primary btn-sm">SUBSCRIBE NOW</button></div>
+      </nav>
+      <!--third level of nav-->
+      <nav class="navbar navbar_color navbar-expand-lg navbar-light">   
+        <!--main links, search icon and three-line button--> 
+        <div class = "d-flex">
+          <button class="navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <ul class = "navbar-nav me-auto">
+            <li class="nav-item">
+              <a id = "blank_link" class="nav-link" href="">Latest News</a>
+            </li>
+            <li class="nav-item">
+              <a id = "blank_link" class="nav-link" href="">List & Leads</a>
+            </li>
+            <li class="nav-item">
+              <a id = "blank_link" class="nav-link" href="">Commercial Real Estate</a>
+            </li>
+            <li class="nav-item">
+              <a id = "blank_link" class="nav-link" href="">Banking</a>
+            </li>
+            <li class="nav-item">
+              <a id = "blank_link" class="nav-link" href="">Technology</a>
+            </li>
+            <li class="nav-item">
+              <a id = "blank_link" class="nav-link" href="">Health Care</a>
+            </li>
+            <li class="nav-item">
+              <a id = "blank_link" class="nav-link" href="">Residential Real Estate</a>
+            </li>
+            <li class="nav-item">
+              <a id = "blank_link" class="nav-link" href="">Food & Lifestyle</a>
+            </li>
+            <li class="nav-item">
+              <a id = "blank_link" class="nav-link" href="">Nashville Inno</a>
+            </li>
           </ul>
-        </li>
-      </ul>
-    </nav>  
-    <!--second level of nav-->
-    <nav class="navbar navbar-light border-bottom p-0 position-relative">
-        <a id = "blank_link" href="" class = "d-flex align-items-center text-center me-auto h-100 logo-link">
-          <div id = "box_nash_logo" class = "nash_logo">
-            <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg" alt="The Business Journals">
-          </div>
-        </a>
-        <div role="link" class="d-none d-sm-none order-sm-0 d-md-flex flex-sm-grow-1 align-items-center">
-          <a id = "blank_link" href="" class="px-4 ml-2" style = "text-decoration: none;" >
-            <div class="fw-bold">Crane Watch: The Big Map of Projects<i class="fa fa-angle-right"></i></div>
-          </a>
         </div>
-        
-        <div class="text-uppercase me-3">access all articles<button type="button" class="btn btn-primary btn-sm">SUBSCRIBE NOW</button></div>
-    </nav>
-    <!--third level of nav-->
-    <nav class="navbar navbar-expand-lg navbar-light">   
-      <!--main links, search icon and three-line button--> 
-      <div class = "d-flex">
-        <button class="navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class = "navbar-nav me-auto">
-          <li class="nav-item">
-            <a id = "blank_link" class="nav-link" href="">Latest News</a>
-          </li>
-          <li class="nav-item">
-            <a id = "blank_link" class="nav-link" href="">List & Leads</a>
-          </li>
-          <li class="nav-item">
-            <a id = "blank_link" class="nav-link" href="">Commercial Real Estate</a>
-          </li>
-          <li class="nav-item">
-            <a id = "blank_link" class="nav-link" href="">Banking</a>
-          </li>
-          <li class="nav-item">
-            <a id = "blank_link" class="nav-link" href="">Technology</a>
-          </li>
-          <li class="nav-item">
-            <a id = "blank_link" class="nav-link" href="">Health Care</a>
-          </li>
-          <li class="nav-item">
-            <a id = "blank_link" class="nav-link" href="">Residential Real Estate</a>
-          </li>
-          <li class="nav-item">
-            <a id = "blank_link" class="nav-link" href="">Food & Lifestyle</a>
-          </li>
-          <li class="nav-item">
-            <a id = "blank_link" class="nav-link" href="">Nashville Inno</a>
-          </li>
-        </ul>
-      </div>
-      <!--FIXME-->
-      <div role = "search" class = "dropdown">
-        <button type = "button" data-bs-toggle = "dropdown" data-bs-target = "#search-menu" class = "navbar-toggle border-0 bg-transparent">
-          <span class = "nav-open-btn">
-            <i class = "fa fa-search"></i>
-          </span>
-        </button>
-        <div id = "search-menu" class = "dropdown-menu bg-primary rounded-0 p-5 m-0 border-0 view">
-          <div class = "container">
-            <!--<form class = "view">
-              <div class = "position-relative input--overlay form-item form-item--group">
-                <label for = "SearchInput" class = "sr-only">Search</label>
-                <i class = "fa fa-search position-absolute text-muted px-1"></i>
-              </div>
-            </form>--> 
+        <!--FIXME-->
+        <div role = "search" class = "dropdown ms-auto">
+          <button type = "button" data-bs-toggle = "dropdown" data-bs-target = "#search-menu" class = "navbar-toggle border-0 bg-transparent">
+            <span class = "nav-open-btn">
+              <i class = "fa fa-search"></i>
+            </span>
+          </button>
+          <div id = "search-menu" class = "dropdown-menu bg-primary rounded-0 p-5 m-0 border-0 view three_lined_menu">
+            <div class = "container">
+              <!--<form class = "view">
+                <div class = "position-relative input--overlay form-item form-item--group">
+                  <label for = "SearchInput" class = "sr-only">Search</label>
+                  <i class = "fa fa-search position-absolute text-muted px-1"></i>
+                </div>
+              </form>--> 
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <!--fourth level of navbar-->
-    <nav class = "navbar navbar-expand-lg navbar-light border-top p-0">
-      <!--collapsed content-->
-      <div class="collapse bg-secondary-subtle three_lined_menu" id="navbar-menu">
-        <div class = "nav-item p-4 mx-4">
-          <button type = "button" data-bs-toggle = "collapse" data-bs-target = "#menu1" class = "fw-bold text-start w-100 px-0 py-4 border-0 rounded-0 bg-transparent">
-            <div class = "fw-bold">
-              Industries & Topics
-            </div>
-          </button>
-          <div id = "menu1" class = "collapse border-0 rounded-0 bg-transparent p-0 m-0 w-100" aria-expanded="false" aria-label="Toggle navigation">
-            <div class = "d-flex flex-row">
-              <div class = "p-6 w-100">
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Banking & Financial</a></div>
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Career & Workspace</a></div>
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Commercial Real Estate</a></div>
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Diversity, Equity and Inclusion</a></div>
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Education</a></div>
+      </nav>
+      <!--fourth level of navbar-->
+      <nav class = "navbar navbar-expand-lg navbar-light border-top p-0">
+        <!--collapsed content-->
+        <div class="collapse bg-secondary-subtle three_lined_menu" id="navbar-menu">
+          <div class = "nav-item p-4 mx-4">
+            <button type = "button" data-bs-toggle = "collapse" data-bs-target = "#menu1" class = "fw-bold text-start w-100 px-0 py-4 border-0 rounded-0 bg-transparent">
+              <div class = "fw-bold">
+                Industries & Topics
               </div>
-              <div class = "p-6 w-100">
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Energy</a></div>
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Food & Lifestyle</a></div>
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Government & Regulation</a></div>
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Health Care</a></div>
-                <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Manufacturing</a></div>
+            </button>
+            <div id = "menu1" class = "collapse border-0 rounded-0 bg-transparent p-0 m-0 w-100" aria-expanded="false" aria-label="Toggle navigation">
+              <div class = "d-flex flex-row">
+                <div class = "p-6 w-100">
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Banking & Financial</a></div>
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Career & Workspace</a></div>
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Commercial Real Estate</a></div>
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Diversity, Equity and Inclusion</a></div>
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Education</a></div>
+                </div>
+                <div class = "p-6 w-100">
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Energy</a></div>
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Food & Lifestyle</a></div>
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Government & Regulation</a></div>
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Health Care</a></div>
+                  <div class = "row"><a id = "blank_link" href = "" class = "link-secondary" style = "text-decoration: none">Manufacturing</a></div>
+                </div>
               </div>
             </div>
-          </div>
-          <button type = "button" data-bs-toggle = "collapse" data-bs-target = "#menu2" class = "fw-bold text-start text-left w-100 px-0 py-4 border-0 rounded-0 bg-transparent">
-            <div class = "fw-bold">
-              Partner Insights (Sponsored Content)
-            </div>
-          </button>
-          <div id = "menu2" class = "collapse border-0 rounded-0 bg-transparent p-0 m-0 w-100" aria-expanded="false" aria-label="Toggle navigation">
+            <button type = "button" data-bs-toggle = "collapse" data-bs-target = "#menu2" class = "fw-bold text-start text-left w-100 px-0 py-4 border-0 rounded-0 bg-transparent">
+              <div class = "fw-bold">
+                Partner Insights (Sponsored Content)
+              </div>
+            </button>
+            <div id = "menu2" class = "collapse border-0 rounded-0 bg-transparent p-0 m-0 w-100" aria-expanded="false" aria-label="Toggle navigation">
 
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+    <div id = "separator"></div>
   </header>
   <body>
     <main>
@@ -813,16 +816,15 @@
               </div>
             </div>
           </div>
-          <section class = "container container--wide my-4 my-sm-5">
+          <section class = "container container--wide my-4 my-sm-5"><!--FIXME-->
             <div class="river-container cappuccino">
-                <a id = "blank_link" class="d-flex justify-content-between border-top pt-3 mt-5">
-                  <h3 class="river-heading pt-0 pb-2 text-body ml-4" style="line-height: 1.25;">Advertising </h3> 
-                  <span href="" class="d-flex align-self-center align-items-center fw-bold mr-4">
-                    <small class="text-body d-none d-md-inline-block">More </small>
-                    <i class="fa fa-angle-right"></i><!--TODO change-->
-                  </span>
-                </a>
-              </a>  
+              <a id = "blank_link" class="d-flex justify-content-between border-top pt-3 mt-5">
+                <h3 class="river-heading pt-0 pb-2 text-body ml-4" style="line-height: 1.25;">Advertising </h3> 
+                <span href="" class="d-flex align-self-center align-items-center fw-bold mr-4">
+                  <small class="text-body d-none d-md-inline-block">More </small>
+                  <i class="fa fa-angle-right"></i>
+                </span>
+              </a> 
               <div class="river-body promo-items m-4 pb-5">
                 <div class="row">
                   <div class="col-12 col-md-6 col-lg-7 mb-5 mb-md-0">
@@ -968,7 +970,7 @@
             </div>
             <div class = "col-2">
               <a id = "blank_link" href="">
-                <img id = "footer_img" src="src/img/right_1.png" alt="" class="sub-frontpage img--block">
+                <img id = "footer_img" src="src/img/right_1.png">
               </a>
             </div>
             <div class = "col-2">
