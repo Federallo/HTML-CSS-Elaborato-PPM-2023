@@ -64,7 +64,7 @@
           <button class="navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <ul class = "navbar-nav me-auto">
+          <ul class = "navbar-nav hidden_on_mobile me-auto">
             <li class="nav-item">
               <a id = "blank_link" class="nav-link" href="">Latest News</a>
             </li>
@@ -157,10 +157,11 @@
   </header>
   <body>
     <main>
+      <div>
       <!--three main colums of the main page-->
-      <div class = "container container--wide">
+      <div id  = "phone"class = "container container--wide">
         <div class = "row">
-          <div class = "col-6">
+          <div class = "col-sm-12 col-lg-6">
             <!--first main column of homepage-->
             <h1 class = "sans-serif border-bottom fw-bold" style = "font-size: 20px;">Top Nashville Business News</h1>
             <div class="pb-4">
@@ -346,9 +347,9 @@
               </div>
             </div>
           </div>
-          <div class = "col-6">
+          <div class = "col-sm-12 col-lg-6">
             <div class = "row">
-              <div class="col-7">
+              <div class="col-sm-12 col-lg-7">
                 <!--second main column of homepage-->
                 <h2 class="sans-serif border-bottom fw-bold" style="font-size: 20px;">Latest News</h2>
                 <div class="mt-n3 pt-3 pb-4">
@@ -500,7 +501,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-5">
+              <div class="col-sm-12 col-lg-5">
                 <!--third main column of homepage-->
                 <h2 class="sans-serif border-bottom fw-bold" style="font-size: 20px;">Your News</h2>
                 <div class="flex-grow-1">
@@ -901,31 +902,31 @@
                 <img src="src/img/nashville_logo.png" alt="Nashville Business Journal" class="footer__logo-img">
               </a>
             </div>
-            <div class = "p-2">
+            <div class = "p-2 hidden_on_mobile">
               <a id = "blank_link" href="">Home</a>
             </div>
-            <div class = "p-2">
+            <div class = "p-2 hidden_on_mobile">
               <a id = "blank_link" href="">News</a>
             </div>
-            <div class = "p-2">
+            <div class = "p-2 hidden_on_mobile">
               <a id = "blank_link" href="">Lists & Leads</a>
             </div>
-            <div class = "p-2">
+            <div class = "p-2 hidden_on_mobile">
               <a id = "blank_link" href="">People</a>
             </div>
-            <div class = "p-2">
+            <div class = "p-2 hidden_on_mobile">
               <a id = "blank_link" href="">Companies</a>
             </div>
-            <div class = "p-2">
+            <div class = "p-2 hidden_on_mobile">
               <a id = "blank_link" href="">Events</a>
             </div>
-            <div class = "p-2">
+            <div class = "p-2 hidden_on_mobile">
               <a id = "blank_link" href="">Store</a>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer__body hidden--xs hidden--sm">
+      <div class="footer__body hidden_on_mobile hidden--xs hidden--sm">
         <div class="container ">
           <div class="row">
             <div class = "col-2">
