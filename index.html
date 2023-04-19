@@ -17,12 +17,12 @@
         <span id = "first_nav" class="navbar-brand fw-bold">THE BUSINESS JOURNAL</span>
         <div id = "first_nav" class="vr"></div>
         <div id = "first_nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav me-auto">
+          <ul class="navbar-nav">
             <li class="nav-item dropdown">
               <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="citySelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Select a City
               </a>
-              <ul class="dropdown-menu dropdown-menu-light ms-auto" aria-labelledby="citySelectDropdown">
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="citySelectDropdown">
                 <li><a id = "blank_link" class="dropdown-item" href="">City 1</a></li>
                 <li><a id = "blank_link" class="dropdown-item" href="">City 2</a></li>
                 <li><a id = "blank_link" class="dropdown-item" href="">City 3</a></li>
@@ -33,7 +33,8 @@
         <ul class="navbar-nav me-auto">
           <li class="nav-item dropdown">
             <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="loginSelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Sign In
+              <span class = "show_on_mobile"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
+              <span class = "hidden_on_mobile">Sign In</span>
             </a>
             <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="loginSelectDropdown">
               <li><a id = "blank_link" class="dropdown-item" href="">Sign in</a></li>
@@ -42,8 +43,28 @@
           </li>
         </ul>
       </nav>  
+      <!--hidden navbar for smartphone-->
+      <nav class="navbar show_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
+
+        <button class=" three_icon_phone navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a id = "blank_link" href="" class = "d-flex logo_phone">
+          <div id = "box_nash_logo" class = "nash_logo">
+            <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg">
+          </div>
+        </a>
+
+        <button type = "button" data-bs-toggle = "dropdown"class = "navbar-toggle border-0 bg-transparent">
+          <span class = "nav-open-btn">
+            <i class = "fa fa-search"></i>
+          </span>
+        </button>
+
+      </nav>
       <!--second level of nav-->
-      <nav class="navbar navbar_color navbar-light border-bottom p-0 position-relative">
+      <nav class="navbar hidden_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
           <a id = "blank_link" href="" class = "d-flex align-items-center text-center me-auto h-100 logo-link">
             <div id = "box_nash_logo" class = "nash_logo">
               <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg" alt="The Business Journals">
@@ -54,11 +75,10 @@
               <div class="fw-bold">Crane Watch: The Big Map of Projects<i class="fa fa-angle-right"></i></div>
             </a>
           </div>
-          
           <div class="text-uppercase me-3">access all articles<button type="button" class="btn btn-primary btn-sm">SUBSCRIBE NOW</button></div>
       </nav>
       <!--third level of nav-->
-      <nav class="navbar navbar_color navbar-expand-lg navbar-light">   
+      <nav class="navbar hidden_on_mobile navbar_color navbar-expand-lg navbar-light">   
         <!--main links, search icon and three-line button--> 
         <div class = "d-flex">
           <button class="navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
@@ -94,23 +114,12 @@
             </li>
           </ul>
         </div>
-        <!--FIXME-->
         <div role = "search" class = "dropdown ms-auto">
-          <button type = "button" data-bs-toggle = "dropdown" data-bs-target = "#search-menu" class = "navbar-toggle border-0 bg-transparent">
+          <button type = "button" data-bs-toggle = "dropdown"class = "navbar-toggle border-0 bg-transparent">
             <span class = "nav-open-btn">
               <i class = "fa fa-search"></i>
             </span>
           </button>
-          <div id = "search-menu" class = "dropdown-menu bg-primary rounded-0 p-5 m-0 border-0 view three_lined_menu">
-            <div class = "container">
-              <!--<form class = "view">
-                <div class = "position-relative input--overlay form-item form-item--group">
-                  <label for = "SearchInput" class = "sr-only">Search</label>
-                  <i class = "fa fa-search position-absolute text-muted px-1"></i>
-                </div>
-              </form>--> 
-            </div>
-          </div>
         </div>
       </nav>
       <!--fourth level of navbar-->

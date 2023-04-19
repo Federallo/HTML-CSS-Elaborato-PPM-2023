@@ -85,6 +85,10 @@
     background-color: white;
 }
 
+.show_on_mobile {
+    display: none;
+}
+
 /* styles for mobile screens */
 @media only screen and (max-width: 576px) {
     .container {
@@ -94,5 +98,25 @@
 
     .hidden_on_mobile {
         display: none;
+    }
+
+    .show_on_mobile {
+        display: flex;
+        text-align: top;
+    }
+    
+    #first_nav_size{
+        height: 50px;
+        width: auto;
+        margin-top: 0px;
+    }
+
+    .three_icon_phone{
+        width: 50px;
+    }
+
+    .logo_phone{
+        width: 300px;
+        margin-left: 0px;
     }
 }
