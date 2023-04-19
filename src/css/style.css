@@ -20,6 +20,10 @@
     background-color: darkblue;
 }
 
+.footer_bg{
+    background-color: #f8f5ef;
+}
+
 #nash_id{
     width: 90%;
     height: 90%;
@@ -41,4 +45,20 @@
 #first_nav_size{
     height: 30px;
     width: auto;
+}
+
+#blank_link:link {
+    text-decoration: none;
+}
+
+#blank_link:visited {
+    text-decoration: none;
+}
+
+#blank_link:hover {
+    text-decoration: underline;
+}
+
+#blank_link:active {
+    text-decoration: underline;
 }
