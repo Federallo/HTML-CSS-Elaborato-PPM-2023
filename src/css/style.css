@@ -1,0 +1,44 @@
+.btn-primary{
+    background-color: darkblue;
+    border-color: darkblue;
+}
+
+.nash_logo{
+    background-color: darkblue;
+}
+
+.cappuccino{
+    background-color: linen;
+}
+
+.btn-outline-primary{
+    border-color: darkblue;
+    color: darkblue;
+}
+
+.btn-outline-primary:hover{
+    background-color: darkblue;
+}
+
+#nash_id{
+    width: 90%;
+    height: 90%;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#box_nash_logo{
+    width: 245px;
+    height: 70px;
+    text-align: center;
+}
+
+#first_nav{
+    font-size: 15px;
+}
+
+#first_nav_size{
+    height: 30px;
+    width: auto;
+}
