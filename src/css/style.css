@@ -28,6 +28,14 @@
     width: 100%;
 }
 
+/*for sign in button*/
+#sign_in{
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+
 #nash_id{
     width: 90%;
     height: 90%;
@@ -46,8 +54,12 @@
 }
 
 #first_nav_size{
-    height: 30px;
-    width: auto;
+    /*height: 30px;
+    width: auto;TODO*/
+}
+
+#blank_link {
+    color: black
 }
 
 #blank_link:link {
@@ -59,11 +71,11 @@
 }
 
 #blank_link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #blank_link:active {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #third_col_img{
@@ -106,9 +118,8 @@
     }
     
     #first_nav_size{
-        height: 50px;
+        height: 0px;
         width: auto;
-        margin-top: 0px;
     }
 
     .three_icon_phone{

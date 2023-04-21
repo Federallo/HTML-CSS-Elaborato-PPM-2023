@@ -13,38 +13,37 @@
   <header>
     <div id = "nav_container" class = "fixed-top">
       <!--first level of nav-->
-      <nav id = "first_nav_size" class="navbar navbar-expand-lg navbar-light bg-secondary-subtle border-bottom font-size: 10px;">
-        <span id = "first_nav" class="navbar-brand fw-bold">THE BUSINESS JOURNAL</span>
-        <div id = "first_nav" class="vr"></div>
-        <div id = "first_nav" class="collapse navbar-collapse">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="citySelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Select a City
-              </a>
-              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="citySelectDropdown">
-                <li><a id = "blank_link" class="dropdown-item" href="">City 1</a></li>
-                <li><a id = "blank_link" class="dropdown-item" href="">City 2</a></li>
-                <li><a id = "blank_link" class="dropdown-item" href="">City 3</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item dropdown">
-            <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="loginSelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <span class = "show_on_mobile"><i class="fa fa-sign-in" aria-hidden="true"></i></span>
-              <span class = "hidden_on_mobile">Sign In</span>
+      <nav id = "first_nav_size" class="navbar bg-secondary-subtle border-bottom">
+        <ul class = "navbar nav">
+          <li class = "nav-item active">
+            <span id = "first_nav" class="navbar-brand fw-bold">THE BUSINESS JOURNAL</span>
+          </li>
+          <li class = "nav-item active">
+            <div class= "vr"></div>            
+          </li>
+          <li class = "nav-item dropdown">
+            <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="citySelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Select a City
             </a>
-            <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="loginSelectDropdown">
-              <li><a id = "blank_link" class="dropdown-item" href="">Sign in</a></li>
-              <li><a id = "blank_link" class="dropdown-item" href="">Become a Member</a></li>
+            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="citySelectDropdown">
+              <li><a id = "blank_link" class="dropdown-item" href="">City 1</a></li>
+              <li><a id = "blank_link" class="dropdown-item" href="">City 2</a></li>
+              <li><a id = "blank_link" class="dropdown-item" href="">City 3</a></li>
             </ul>
           </li>
         </ul>
+        <div class = "me-4 dropdown">
+          <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="citySelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Sign In
+          </a>
+          <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="citySelectDropdown">
+            <li><a id = "blank_link" class="dropdown-item" href="">Sign In</a></li>
+            <li><a id = "blank_link" class="dropdown-item" href="">Become a Member</a></li>
+          </ul>
+        </div>
       </nav>  
       <!--hidden navbar for smartphone-->
-      <nav class="navbar show_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
+      <!--<nav class="navbar show_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
 
         <button class=" three_icon_phone navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -62,7 +61,7 @@
           </span>
         </button>
 
-      </nav>
+      </nav>-->
       <!--second level of nav-->
       <nav class="navbar hidden_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
           <a id = "blank_link" href="" class = "d-flex align-items-center text-center me-auto h-100 logo-link">
