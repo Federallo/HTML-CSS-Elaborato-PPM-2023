@@ -34,8 +34,6 @@
     border-color: transparent;
 }
 
-
-
 #nash_id{
     width: 90%;
     height: 90%;
@@ -113,6 +111,11 @@
 #commercial-menu:active {
     text-decoration: none;
 }
+
+#crane-watch{
+    font-size: 12px;
+}
+
 .navbar_color{
     background-color: white;
 }
