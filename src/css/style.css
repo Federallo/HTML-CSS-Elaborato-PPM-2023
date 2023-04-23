@@ -48,12 +48,20 @@
 }
 
 #first_nav{
-    font-size: 15px;
+    font-size: 10px;
 }
 
 #first_nav_size{
-    /*height: 30px;
-    width: auto;TODO*/
+    height: 35px;
+    width: auto;
+    font-size: 12px;
+    padding-top: 0%;
+    padding-left: 2%;
+    text-align: center !important;
+} 
+
+#journal_title {
+    font-size: 12px;
 }
 
 #blank_link {
