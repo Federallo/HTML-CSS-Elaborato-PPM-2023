@@ -93,6 +93,26 @@
     height: 150px;
 }
 
+#commercial-menu {
+    font-size: 14px;
+    color: #254f9c;
+}
+
+#commercial-menu:link {
+    text-decoration: none;
+}
+
+#commercial-menu:visited {
+    text-decoration: none;
+}
+
+#commercial-menu:hover {
+    text-decoration: underline;
+}
+
+#commercial-menu:active {
+    text-decoration: none;
+}
 .navbar_color{
     background-color: white;
 }
