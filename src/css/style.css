@@ -159,6 +159,12 @@
     display: none;
 }
 
+@media only screen and (max-width: 1190px) {
+    .remove_on_downscale {
+        display: none !important;
+    }
+}
+
 /* styles for mobile screens */
 @media only screen and (max-width: 576px) {
     .container {
@@ -167,7 +173,7 @@
     }
 
     .hidden_on_mobile {
-        display: none;
+        display: none !important;
     }
 
     .show_on_mobile {
