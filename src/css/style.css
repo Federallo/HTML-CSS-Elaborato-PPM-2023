@@ -167,6 +167,27 @@
     text-decoration: underline;
 }
 
+#calendar_color{
+    color: darkgoldenrod;
+}
+
+#card_body_color:hover{
+    background-color: linen;
+}
+
+/*FIXME*/
+border-top.event_border_top {
+    border: darkgoldenrod;
+}
+
+border-top.event_border_top > thread > tr > th {
+    border: darkgoldenrod;
+}
+
+border-top.event_border_top > thread > tr > td {
+    border: darkgoldenrod;
+}
+
 .navbar_color{
     background-color: white;
 }
