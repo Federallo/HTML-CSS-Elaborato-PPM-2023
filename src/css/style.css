@@ -151,6 +151,22 @@
     color: blue;
 }
 
+#horizontal_section {
+    color: black;
+}
+
+#horizontal_section:link {
+    text-decoration: none;
+}
+
+#horizontal_section:active{
+    text-decoration: none;
+}
+
+#horizontal_section:hover {
+    text-decoration: underline;
+}
+
 .navbar_color{
     background-color: white;
 }
