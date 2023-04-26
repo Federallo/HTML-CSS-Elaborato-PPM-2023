@@ -46,27 +46,23 @@
         </div>
       </nav>  
       <!--hidden navbar for smartphone-->
-      <nav class="navbar show_on_mobile nash_logo navbar-light p-0 position-relative">
-        <div class = "d-flex logo_phone align-items-stre">
-          <div class = "p-4 navbar_color">
-            <button class=" three_icon_phone navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-          <div class = "p-2">
-            <div id = "box_nash_logo" class = "nash_logo">
-              <a href = "">
-                <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg">
-              </a>
-            </div>
-          </div>
-          <div class = "p-4 search_bg me-0"> <!--FIXME icon position-->
-            <button type = "button" data-bs-toggle = "dropdown"class = "navbar-toggle border-0 search_bg">
-              <span class = "nav-open-btn">
-                <i class = "fa fa-search"></i>
-              </span>
-            </button>
-          </div>
+      <nav class="navbar show_on_mobile nash_logo navbar-light p-0">
+        <div class = "d-flex icons align-items-stretch order-first order-sm-3 navbar_color">
+          <button class=" three_icon_phone navbar-toggle bg-transparent border-0 navbar_color" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class = "order-0 flex-grow-1 flex-md-grow-0 align-items-center">
+          <a href = "">
+            <img class = "nav-banner-brand-img m-auto p-3" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg">
+          </a>
+        </div>
+        <div class= "d-flex icons search_bg">
+          <button type = "button" data-bs-toggle = "dropdown" class = "navbar-toggle border-0 search_bg">
+            <span class = "nav-open-btn">
+              <i class = "fa fa-search"></i>
+            </span>
+          </button>
         </div>
       </nav>
       <!--second level of nav-->
@@ -927,8 +923,8 @@
                   <div class="col col-lg-11 overflow-auto">
                     <div class="row flex-nowrap">
                       <div class = "col-8 col-lg-3 d-flex align-items-stretch">
-                        <div class = "card rounded-0">
-                          <div id = "calendar_color" class = "card-header border-0 rounded-0 border-3 border-top event_border_top text-start fw-bold text-uppercase cappuccino"> <!--TODO adjust border top-->
+                        <div class = "card event_border_top rounded-0">
+                          <div id = "calendar_color" class = "card-header border-0 rounded-0 text-start fw-bold text-uppercase cappuccino"> <!--TODO adjust border top-->
                             <i class = "fa fa-calendar"></i> april 25
                           </div>
                           <div id = "card_body_color" class = "card-body">
@@ -939,8 +935,8 @@
                         </div>
                       </div>
                       <div class = "col-8 col-lg-3 d-flex align-items-stretch">
-                        <div class = "card rounded-0">
-                          <div id = "calendar_color" class = "card-header border-0 rounded-0 border-3 border-top text-start fw-bold text-uppercase cappuccino"> <!--TODO adjust border top-->
+                        <div class = "card event_border_top rounded-0">
+                          <div id = "calendar_color" class = "card-header border-0 rounded-0 text-start fw-bold text-uppercase cappuccino"> <!--TODO adjust border top-->
                             <i class = "fa fa-calendar"></i> may 9
                           </div>
                           <div id = "card_body_color" class = "card-body">
@@ -951,8 +947,8 @@
                         </div>
                       </div>
                       <div class = "col-8 col-lg-3 d-flex align-items-stretch">
-                        <div class = "card rounded-0">
-                          <div id = "calendar_color" class = "card-header border-0 rounded-0 border-3 border-top text-start fw-bold text-uppercase cappuccino"> <!--TODO adjust border top-->
+                        <div class = "card event_border_top rounded-0">
+                          <div id = "calendar_color" class = "card-header border-0 rounded-0 text-start fw-bold text-uppercase cappuccino"> <!--TODO adjust border top-->
                             <i class = "fa fa-calendar"></i> may 11
                           </div>
                           <div id = "card_body_color" class = "card-body">
@@ -1055,7 +1051,7 @@
           <div class="d-flex flex-row-reverse">
             <div class = "p-2">
               <div class="footer__back-to-top">
-                <a id = "blank_link" href="">Back to Top <i class="icon-angle-up"></i></a>
+                <a id = "blank_link" href="">Back to Top <i class="icon-angle-up"></i></a><!--TODO add arrow-->
               </div>
             </div>
           </div>
