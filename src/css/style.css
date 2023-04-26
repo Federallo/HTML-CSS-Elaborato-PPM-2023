@@ -172,16 +172,8 @@
 }
 
 /*FIXME*/
-border-top.event_border_top {
-    border: darkgoldenrod;
-}
-
-border-top.event_border_top > thread > tr > th {
-    border: darkgoldenrod;
-}
-
-border-top.event_border_top > thread > tr > td {
-    border: darkgoldenrod;
+.event_border_top {
+    border-color: darkgoldenrod;
 }
 
 .navbar_color{
