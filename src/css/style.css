@@ -179,10 +179,7 @@
 }
 
 .event_border_top {
-    border-color: darkgoldenrod;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
+    border-color: darkgoldenrod gainsboro gainsboro gainsboro;
 }
 
 .navbar_color{
