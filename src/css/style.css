@@ -171,7 +171,13 @@
     background-color: linen;
 }
 
-/*FIXME*/
+.stretch{
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .event_border_top {
     border-color: darkgoldenrod;
     border-left: none;
