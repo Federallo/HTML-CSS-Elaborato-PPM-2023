@@ -67,26 +67,36 @@
       </nav>
       <!--second level of nav-->
       <nav class="navbar hidden_on_mobile navbar_color navbar-light border-bottom p-0 position-relative" >
-          <a id = "blank_link" href="" class = "d-flex align-items-center text-center me-auto h-100 logo-link">
-            <div id = "box_nash_logo" class = "nash_logo">
-              <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg" alt="The Business Journals">
-            </div>
-          </a>
-          <div role="link" class="d-none d-sm-none order-sm-0 d-md-flex flex-sm-grow-1 align-items-center">
-            <a id = "blank_link" href="" class="px-4 ms-2">
-              <div id = "crane-watch" class="fw-bold">Crane Watch: The Big Map of Projects  <i class="fa fa-angle-right"></i></div>
-            </a>
+        <button class="navbar-toggle bg-transparent border-0 hide_before_downscale" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a id = "blank_link" href="" class = "d-flex align-items-center text-center me-auto h-100 logo-link">
+          <div id = "box_nash_logo" class = "nash_logo">
+            <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg" alt="The Business Journals">
           </div>
-          <div class="text-uppercase me-3">access all articles<button type="button" class="btn btn-primary btn-sm">SUBSCRIBE NOW</button></div>
+        </a>
+        <div role="link" class="d-none d-sm-none order-sm-0 d-md-flex flex-sm-grow-1 align-items-center">
+          <a id = "blank_link" href="" class="px-4 ms-2">
+            <div id = "crane-watch" class="fw-bold remove_on_downscale">Crane Watch: The Big Map of Projects  <i class="fa fa-angle-right"></i></div>
+          </a>
+        </div>
+        <div class="text-uppercase me-3">access all articles<button type="button" class="btn btn-primary btn-sm">SUBSCRIBE NOW</button></div>
+        <div role = "search" class = "dropdown ms-auto hide_before_downscale">
+          <button type = "button" data-bs-toggle = "dropdown"class = "navbar-toggle border-0 bg-transparent">
+            <span class = "nav-open-btn">
+              <i class = "fa fa-search"></i>
+            </span>
+          </button>
+        </div>
       </nav>
       <!--third level of nav-->
-      <nav class="navbar hidden_on_mobile navbar_color navbar-expand-lg navbar-light">   
+      <nav class="navbar remove_on_downscale navbar_color navbar-expand-lg navbar-light">   
         <!--main links, search icon and three-line button--> 
         <div class = "d-flex">
           <button class="navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <ul class = "navbar-nav hidden_on_mobile remove_on_downscale me-auto">
+          <ul class = "navbar-nav hidden_on_mobile me-auto">
             <li class="nav-item">
               <a id = "blank_link" class="nav-link" href="">Latest News</a>
             </li>

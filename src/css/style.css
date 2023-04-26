@@ -193,9 +193,17 @@
     display: none;
 }
 
+.hide_before_downscale{
+    display: none;
+}
+
 @media only screen and (max-width: 1190px) {
     .remove_on_downscale {
         display: none !important;
+    }
+
+    .hide_before_downscale{
+        display: block;
     }
 }
 
