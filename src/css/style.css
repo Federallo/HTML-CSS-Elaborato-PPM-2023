@@ -47,11 +47,7 @@
     height: 60px;
 }
 
-#first_nav{
-    font-size: 10px;
-}
-
-#first_nav_size{
+.first_nav_size{
     height: 35px;
     width: auto;
     font-size: 12px;
@@ -218,9 +214,13 @@ border-top.event_border_top > thread > tr > td {
         text-align: top;
     }
     
-    #first_nav_size{
-        height: 0px;
+    .first_nav_size{
+        height: 30px;
         width: auto;
+        font-size: 12px;
+        padding-top: 0%;
+        padding-left: 2%;
+        text-align: center !important;
     }
 
     .three_icon_phone{
