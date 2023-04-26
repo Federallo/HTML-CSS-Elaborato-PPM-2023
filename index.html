@@ -33,8 +33,11 @@
           </li>
         </ul>
         <div class = "me-4 dropdown">
-          <a id = "blank_link" class="nav-link dropdown-toggle fw-bold" href="" id="citySelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a id = "blank_link" class="nav-link dropdown-toggle fw-bold hidden_on_mobile" href="" id="citySelectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Sign In
+          </a>
+          <a id = "blank_link" calss = "nav-link dropdown-toggle fw-bold show_on_mobile" href = "" id="cityselectDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class = "fa fa-user"></i>
           </a>
           <ul class="dropdown-menu dropdown-menu-light dropdown-menu-end" aria-labelledby="citySelectDropdown">
             <li><a id = "blank_link" class="dropdown-item" href="">Sign In</a></li>
@@ -43,7 +46,7 @@
         </div>
       </nav>  
       <!--hidden navbar for smartphone-->
-      <!--<nav class="navbar show_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
+      <nav class="navbar show_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
 
         <button class=" three_icon_phone navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -61,7 +64,7 @@
           </span>
         </button>
 
-      </nav>-->
+      </nav>
       <!--second level of nav-->
       <nav class="navbar hidden_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
           <a id = "blank_link" href="" class = "d-flex align-items-center text-center me-auto h-100 logo-link">
