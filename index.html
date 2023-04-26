@@ -46,27 +46,31 @@
         </div>
       </nav>  
       <!--hidden navbar for smartphone-->
-      <nav class="navbar show_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
-
-        <button class=" three_icon_phone navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <a id = "blank_link" href="" class = "d-flex logo_phone">
-          <div id = "box_nash_logo" class = "nash_logo">
-            <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg">
+      <nav class="navbar show_on_mobile nash_logo navbar-light p-0 position-relative">
+        <div class = "d-flex logo_phone align-items-stre">
+          <div class = "p-4 navbar_color">
+            <button class=" three_icon_phone navbar-toggle bg-transparent border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu" aria-controls="navbar-menu" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-        </a>
-
-        <button type = "button" data-bs-toggle = "dropdown"class = "navbar-toggle border-0 bg-transparent">
-          <span class = "nav-open-btn">
-            <i class = "fa fa-search"></i>
-          </span>
-        </button>
-
+          <div class = "p-2">
+            <div id = "box_nash_logo" class = "nash_logo">
+              <a href = "">
+                <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg">
+              </a>
+            </div>
+          </div>
+          <div class = "p-4 search_bg me-0"> <!--FIXME icon position-->
+            <button type = "button" data-bs-toggle = "dropdown"class = "navbar-toggle border-0 search_bg">
+              <span class = "nav-open-btn">
+                <i class = "fa fa-search"></i>
+              </span>
+            </button>
+          </div>
+        </div>
       </nav>
       <!--second level of nav-->
-      <nav class="navbar hidden_on_mobile navbar_color navbar-light border-bottom p-0 position-relative">
+      <nav class="navbar hidden_on_mobile navbar_color navbar-light border-bottom p-0 position-relative" >
           <a id = "blank_link" href="" class = "d-flex align-items-center text-center me-auto h-100 logo-link">
             <div id = "box_nash_logo" class = "nash_logo">
               <img class = "nav-banner-brand-img m-auto" id = "nash_id" data-cy="nav-banner-brand-img" src="src/img/nashville-logo.svg" alt="The Business Journals">
@@ -195,9 +199,14 @@
         </div>
       </nav>
     </div>
-    <div id = "separator"></div>
+    <!--mobile navbar-->
+    <div class = "d-flex justify-content-center align-items-center subscribe_mobile">
+      <div class="text-uppercase me-3">access all articles<button type="button" class="btn btn-primary btn-sm">SUBSCRIBE NOW</button></div>
+    </div>
   </header>
   <body>
+
+    <div id = "separator"></div>
     <main>
       <div>
       <!--three main colums of the main page-->
